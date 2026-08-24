@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Thread - 6kun</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>6kun</h1>
+            <p>Where the strange becomes a story.</p>
+        </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="category.html">Categories</a>
+        </nav>
+        <div class="user-controls">
+            <a href="profile.html" class="profile-icon">Profile</a>
+            <a href="index.html">Logout</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="create-thread">
+            <h2>Create a Thread</h2>
+            <form action="#" method="post">
+                <label for="title">Thread Title</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="category">Category</label>
+                <select id="category" name="category" required>
+                    <option value="">Select a category</option>
+                    <option value="paranormal">Paranormal Encounters</option>
+                    <option value="urban-legends">Urban Legends</option>
+                    <option value="unexplained">Unexplained Mysteries</option>
+                </select>
+
+                <label for="body">Your Story</label>
+                <textarea id="body" name="body" rows="10" required></textarea>
+
+                <button type="submit">Post Thread</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="#">Community Guidelines</a>
+            <a href="#">Contact</a>
+            <a href="#">Help</a>
+        </nav>
+        <p>&copy; 2026 6kun. All rights reserved.</p>
+    </footer>
+</body>
+</html>

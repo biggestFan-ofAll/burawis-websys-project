@@ -8,7 +8,7 @@
 
 # Current Pages
 
-## 1. Landing Page (index.html) — ✅ Built
+## 1. Landing Page (index.html)
 
 ### Header
 - 6kun logo + tagline
@@ -26,7 +26,7 @@
 
 ---
 
-## 2. Home Page (home.html) — ✅ Built
+## 2. Home Page (home.html)
 
 ### Header
 - 6kun logo
@@ -47,7 +47,7 @@
 
 ---
 
-## 3. Login Page (login.html) — ✅ Built
+## 3. Login Page (login.html)
 
 ### Header
 - 6kun logo
@@ -64,7 +64,7 @@
 
 ---
 
-## 4. Register Page (register.html) — ✅ Built
+## 4. Register Page (register.html)
 
 ### Header
 - 6kun logo
@@ -98,4 +98,4 @@ Displays a user's username, join date, and their posted threads. Linked from the
 
 # Backlog (lower priority)
 - About, Contact, Community Guidelines, Privacy Policy, Terms of Service pages (currently `#` in footers)
-- Forgot Password flow (currently `#` on login.html)
+- Forgot Password flow (currently `#` on login.html)gi
