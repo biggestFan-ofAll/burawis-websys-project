@@ -4,93 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - 6kun</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <div class="logo">
             <h1>6kun</h1>
-            <p>Where the strange becomes a story.</p>
+            <p>Where the strange gets archived.</p>
         </div>
-        <form id="search" action="#" method="get">
-            <input type="search" name="q" placeholder="Search threads...">
+        <form id="search" class="search-form" action="#" method="get">
+            <input class="search-input" type="search" name="q" placeholder="Search the archive...">
             <button type="submit">Search</button>
         </form>
         <nav>
-            <a href="home.html">Home</a>
-            <a href="#">Categories</a>
-            <a href="#">Trending</a>
+            <a class="nav-link" href="home.html">Home</a>
+            <a class="nav-link" href="category.html">Boards</a>
+            <a class="nav-link" href="#trending">Trending</a>
         </nav>
         <div class="user-controls">
-            <a href="#" class="profile-icon">Profile</a>
-            <a href="index.html">Logout</a>
+            <a class="nav-link profile-icon" href="profile.html">Profile</a>
+            <a class="nav-link" href="index.html">Logout</a>
         </div>
     </header>
 
-    <main>
+    <main class="site-main">
         <section id="announcements">
-            <h2>Recent Announcements</h2>
-            <article>
-                <h3>Welcome to the new 6kun</h3>
-                <p>Community guidelines have been updated. Please review them before posting.</p>
+            <h2 class="section-title">From the Mods</h2>
+            <article class="post">
+                <h3>yeah, we're still here</h3>
+                <p>Rules got cleaned up a little. Don't be a dick, don't post people's personal info, and don't ruin a good story just because you don't like it. The usual stuff. Read the guidelines if you're new.</p>
             </article>
         </section>
 
         <section id="actions">
-            <a href="#" class="create-thread-btn">Create Thread</a>
+            <a href="create-thread.html" class="btn">Post Something Weird</a>
         </section>
 
         <section id="categories">
-            <h2>Categories / Boards</h2>
-            <article>
-                <h3>Paranormal Encounters</h3>
-                <p>Ghosts, hauntings, and things that go bump in the night.</p>
+            <h2 class="section-title">Boards</h2>
+            <article class="board-tag">
+                <h3 data-slug="paranormal">Paranormal</h3>
+                <p>Ghosts, sleep paralysis, weird houses, things standing in doorways, and that feeling you're not alone.</p>
             </article>
-            <article>
-                <h3>Urban Legends</h3>
-                <p>Local myths, rumors, and community folklore.</p>
+            <article class="board-tag">
+                <h3 data-slug="urban-legends">Urban Legends</h3>
+                <p>Local stories, internet folklore, childhood warnings, chain emails, and the thing your cousin swears actually happened.</p>
             </article>
-            <article>
-                <h3>Unexplained Mysteries</h3>
-                <p>Strange events with no clear explanation.</p>
+            <article class="board-tag">
+                <h3 data-slug="unexplained">Unexplained</h3>
+                <p>Weird photos, missing time, strange recordings, impossible coincidences, and stuff that doesn't add up.</p>
             </article>
         </section>
 
-        <section id="trending">
-            <h2>Trending Discussions</h2>
-            <article>
+        <section id="trending" class="board-list">
+            <h2 class="section-title">What's Everyone Talking About</h2>
+            <article class="post">
                 <h3>The knocking in apartment 4B</h3>
-                <p>124 replies &middot; last activity 2 hours ago</p>
+                <p class="meta">124 replies &middot; last activity 2 hours ago</p>
             </article>
-            <article>
+            <article class="post">
                 <h3>Anyone else remember the "other" ending?</h3>
-                <p>87 replies &middot; last activity 5 hours ago</p>
+                <p class="meta">87 replies &middot; last activity 5 hours ago</p>
             </article>
         </section>
 
-        <section id="recent-threads">
-            <h2>Recent Threads</h2>
-            <article>
-                <h3>Strange lights over the old mill</h3>
-                <p>Posted in Unexplained Mysteries</p>
+        <section id="recent-threads" class="board-list">
+            <h2 class="section-title">Fresh From the Archive</h2>
+            <article class="post">
+                <h3><a href="thread.html">Strange lights over the old mill</a></h3>
+                <p class="meta">Posted in Unexplained &middot; OP says they're "probably just planes" but uploaded 14 pictures</p>
             </article>
-            <article>
-                <h3>The story my grandmother never finished</h3>
-                <p>Posted in Urban Legends</p>
+            <article class="post">
+                <h3><a href="thread.html">the story my grandmother never finished</a></h3>
+                <p class="meta">Posted in Urban Legends &middot; "she'd always stop right before telling me what was in the basement"</p>
             </article>
-            <article>
-                <h3>Something followed me home from the woods</h3>
-                <p>Posted in Paranormal Encounters</p>
+            <article class="post">
+                <h3><a href="thread.html">Something followed me home from the woods</a></h3>
+                <p class="meta">Posted in Paranormal &middot; 3:17 AM &middot; OP has not replied since posting</p>
             </article>
         </section>
     </main>
 
     <footer>
         <nav>
-            <a href="#">Community Guidelines</a>
-            <a href="#">Contact</a>
-            <a href="#">Help</a>
+            <a class="footer-link" href="#">Community Guidelines</a>
+            <a class="footer-link" href="#">Contact</a>
+            <a class="footer-link" href="#">Help</a>
         </nav>
-        <p>&copy; 2026 6kun. All rights reserved.</p>
+        <p>&copy; 2026 6kun. Nothing stays buried forever.</p>
     </footer>
 </body>
 </html>

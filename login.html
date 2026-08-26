@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - 6kun</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <div class="logo">
             <h1>6kun</h1>
-            <p>Where the strange becomes a story.</p>
+            <p>Where the strange gets archived.</p>
         </div>
         <nav>
-            <a href="index.html">Back to Landing Page</a>
+            <a class="nav-link" href="index.html">Back to 6kun</a>
         </nav>
     </header>
 
-    <main>
+    <main class="site-main">
         <section id="login">
-            <h2>Login</h2>
+            <h2 class="section-title">Log In</h2>
             <form action="#" method="post">
                 <label for="username">Username or Email</label>
                 <input type="text" id="username" name="username" required>
@@ -26,25 +27,25 @@
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
 
-                <label>
+                <label class="inline-label">
                     <input type="checkbox" id="remember" name="remember">
-                    Remember Me
+                    Keep me logged in
                 </label>
 
-                <button type="submit">Login</button>
+                <button type="submit">Enter 6kun</button>
             </form>
 
-            <a href="#">Forgot Password?</a>
-            <p>Don't have an account? <a href="register.html">Register here</a></p>
+            <p><a href="#">Forgot your password?</a></p>
+            <p>New here? <a href="register.html">Make an account</a></p>
         </section>
     </main>
 
     <footer>
         <nav>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
+            <a class="footer-link" href="#">Privacy Policy</a>
+            <a class="footer-link" href="#">Terms of Service</a>
         </nav>
-        <p>&copy; 2026 6kun. All rights reserved.</p>
+        <p>&copy; 2026 6kun. Nothing stays buried forever.</p>
     </footer>
 </body>
 </html>

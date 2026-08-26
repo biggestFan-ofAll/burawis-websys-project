@@ -4,53 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Thread - 6kun</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <div class="logo">
             <h1>6kun</h1>
-            <p>Where the strange becomes a story.</p>
+            <p>Where the strange gets archived.</p>
         </div>
         <nav>
-            <a href="home.html">Home</a>
-            <a href="category.html">Categories</a>
+            <a class="nav-link" href="home.html">Home</a>
+            <a class="nav-link" href="category.html">Boards</a>
         </nav>
         <div class="user-controls">
-            <a href="profile.html" class="profile-icon">Profile</a>
-            <a href="index.html">Logout</a>
+            <a class="nav-link" href="profile.html">Profile</a>
+            <a class="nav-link" href="index.html">Logout</a>
         </div>
     </header>
 
-    <main>
+    <main class="site-main">
         <section id="create-thread">
-            <h2>Create a Thread</h2>
+            <h2 class="section-title">Post Something Weird</h2>
             <form action="#" method="post">
-                <label for="title">Thread Title</label>
+                <label for="title">What's going on?</label>
                 <input type="text" id="title" name="title" required>
 
-                <label for="category">Category</label>
+                <label for="category">Where does it belong?</label>
                 <select id="category" name="category" required>
-                    <option value="">Select a category</option>
-                    <option value="paranormal">Paranormal Encounters</option>
+                    <option value="">Pick a board</option>
+                    <option value="paranormal">Paranormal</option>
                     <option value="urban-legends">Urban Legends</option>
-                    <option value="unexplained">Unexplained Mysteries</option>
+                    <option value="unexplained">Unexplained</option>
                 </select>
 
-                <label for="body">Your Story</label>
+                <label for="body">Tell us what happened</label>
                 <textarea id="body" name="body" rows="10" required></textarea>
 
-                <button type="submit">Post Thread</button>
+                <button type="submit">Post It</button>
             </form>
         </section>
     </main>
 
     <footer>
         <nav>
-            <a href="#">Community Guidelines</a>
-            <a href="#">Contact</a>
-            <a href="#">Help</a>
+            <a class="footer-link" href="#">Community Guidelines</a>
+            <a class="footer-link" href="#">Contact</a>
+            <a class="footer-link" href="#">Help</a>
         </nav>
-        <p>&copy; 2026 6kun. All rights reserved.</p>
+        <p>&copy; 2026 6kun. Nothing stays buried forever.</p>
     </footer>
 </body>
 </html>

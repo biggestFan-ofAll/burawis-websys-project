@@ -4,65 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thread - 6kun</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <div class="logo">
             <h1>6kun</h1>
-            <p>Where the strange becomes a story.</p>
+            <p>Where the strange gets archived.</p>
         </div>
-        <form id="search" action="#" method="get">
-            <input type="search" name="q" placeholder="Search threads...">
+        <form id="search" class="search-form" action="#" method="get">
+            <input class="search-input" type="search" name="q" placeholder="Search the archive...">
             <button type="submit">Search</button>
         </form>
         <nav>
-            <a href="home.html">Home</a>
-            <a href="category.html">Categories</a>
-            <a href="home.html#trending">Trending</a>
+            <a class="nav-link" href="home.html">Home</a>
+            <a class="nav-link" href="category.html">Boards</a>
+            <a class="nav-link" href="home.html#trending">Trending</a>
         </nav>
         <div class="user-controls">
-            <a href="profile.html" class="profile-icon">Profile</a>
-            <a href="index.html">Logout</a>
+            <a class="nav-link" href="profile.html">Profile</a>
+            <a class="nav-link" href="index.html">Logout</a>
         </div>
     </header>
 
-    <main>
+    <main class="site-main">
         <section id="thread-header">
-            <p><a href="category.html">&larr; Back to Unexplained Mysteries</a></p>
-            <h2>Strange lights over the old mill</h2>
-            <p class="thread-meta">Posted by <a href="profile.html">nightwatcher_13</a> &middot; 3 days ago &middot; Unexplained Mysteries</p>
+            <p><a href="category.html">&larr; Back to Unexplained</a></p>
+            <h2 class="thread-title">the lights at the old mill are back</h2>
+            <p class="meta">Posted by <a href="profile.html">nightwatcher_13</a> &middot; 3 days ago &middot; Unexplained</p>
         </section>
 
         <section id="original-post">
-            <article>
+            <article class="post">
                 <p>
-                    I've lived near the old grain mill on Route 9 my whole life, and last week
-                    I saw lights moving inside it again — the same pale blue flicker my dad used
-                    to talk about. No one's had power out there since the place shut down in the 90s.
+                    Okay so I don't really know where else to put this. I live a few minutes
+                    from the old grain mill on Route 9 and I saw lights moving around inside
+                    it again last Thursday night.
+                </p>
+                <p>
+                    They were this weird pale blue color. Not flashlight blue. More like
+                    someone left a TV on in another room.
+                </p>
+                <p>
+                    My dad used to talk about seeing the same thing when I was a kid. He always
+                    said it was probably kids messing around in there, but the mill hasn't had
+                    electricity since the 90s.
+                </p>
+                <p>
+                    I took pictures but they're mostly garbage because I was shaking like an
+                    idiot. I'll upload them if anyone actually cares.
                 </p>
             </article>
         </section>
 
         <section id="replies">
-            <h3>Replies (2)</h3>
+            <h3>Replies (4)</h3>
 
-            <article class="reply">
-                <p class="reply-meta">
+            <article class="post reply">
+                <p class="meta">
                     <a href="profile.html">hollow_ground</a> &middot; 2 days ago
                 </p>
-                <p>Not just you. My cousin saw the same thing back in 2019. Nobody believed her either.</p>
+                <p>Not just you. My cousin saw the same blue light in 2019. She wouldn't go near the place after that.</p>
             </article>
 
-            <article class="reply">
-                <p class="reply-meta">
-                    <a href="profile.html">salt_and_static</a> &middot; 1 day ago
+            <article class="post reply">
+                <p class="meta">
+                    <a href="profile.html">salt_and_static</a> &middot; 2 days ago
                 </p>
-                <p>Could be trespassers with flashlights, but the color you're describing is oddly specific.</p>
+                <p>Probably trespassers. People break into abandoned buildings all the time. The blue thing is weird though.</p>
+            </article>
+
+            <article class="post reply">
+                <p class="meta">
+                    <a href="profile.html">deadchannel</a> &middot; 1 day ago
+                </p>
+                <p>Don't go inside.</p>
+            </article>
+
+            <article class="post reply">
+                <p class="meta">
+                    <a href="profile.html">nightwatcher_13</a> &middot; 18 hours ago
+                </p>
+                <p>yeah I'm not planning on it lol. Also, @deadchannel, why specifically did you say that?</p>
             </article>
         </section>
 
         <section id="reply-form">
-            <h3>Post a Reply</h3>
+            <h3>Say Something</h3>
             <form action="#" method="post">
                 <label for="reply-body">Your reply</label>
                 <textarea id="reply-body" name="reply-body" rows="5" required></textarea>
@@ -73,11 +101,11 @@
 
     <footer>
         <nav>
-            <a href="#">Community Guidelines</a>
-            <a href="#">Contact</a>
-            <a href="#">Help</a>
+            <a class="footer-link" href="#">Community Guidelines</a>
+            <a class="footer-link" href="#">Contact</a>
+            <a class="footer-link" href="#">Help</a>
         </nav>
-        <p>&copy; 2026 6kun. All rights reserved.</p>
+        <p>&copy; 2026 6kun. Nothing stays buried forever.</p>
     </footer>
 </body>
 </html>

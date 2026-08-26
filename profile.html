@@ -4,54 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile - 6kun</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <div class="logo">
             <h1>6kun</h1>
-            <p>Where the strange becomes a story.</p>
+            <p>Where the strange gets archived.</p>
         </div>
         <nav>
-            <a href="home.html">Home</a>
-            <a href="category.html">Categories</a>
+            <a class="nav-link" href="home.html">Home</a>
+            <a class="nav-link" href="category.html">Boards</a>
         </nav>
         <div class="user-controls">
-            <a href="profile.html" class="profile-icon">Profile</a>
-            <a href="index.html">Logout</a>
+            <a class="nav-link" href="profile.html">Profile</a>
+            <a class="nav-link" href="index.html">Logout</a>
         </div>
     </header>
 
-    <main>
+    <main class="site-main">
         <section id="profile-header">
-            <h2>nightwatcher_13</h2>
-            <p class="profile-meta">Member since March 2026 &middot; 12 threads &middot; 58 replies</p>
+            <h2 class="handle">nightwatcher_13</h2>
+            <p class="meta">Member since March 2026 &middot; 12 threads &middot; 58 replies</p>
         </section>
 
         <section id="bio">
             <h3>About</h3>
-            <p>Collector of small-town legends. If it happened somewhere with bad streetlights, I've probably heard about it.</p>
+            <div class="post">
+                <p>I collect weird stories from small towns. Mostly the kind people tell you when nobody else is listening. If it happened somewhere with one gas station and terrible streetlights, I've probably heard about it.</p>
+            </div>
         </section>
 
-        <section id="user-threads">
-            <h3>Threads Started</h3>
-            <article>
-                <h4><a href="thread.html">Strange lights over the old mill</a></h4>
-                <p class="thread-meta">Unexplained Mysteries &middot; 2 replies</p>
+        <section id="user-threads" class="board-list">
+            <h3>Started by nightwatcher_13</h3>
+            <article class="post">
+                <h4><a href="thread.html">the lights at the old mill are back</a></h4>
+                <p class="meta">Unexplained &middot; 4 replies &middot; started 3 days ago</p>
             </article>
-            <article>
-                <h4><a href="thread.html">The house at the end of Miller Rd. is for sale again</a></h4>
-                <p class="thread-meta">Urban Legends &middot; 9 replies</p>
+            <article class="post">
+                <h4><a href="thread.html">okay so the house at the end of Miller Rd is for sale again</a></h4>
+                <p class="meta">Urban Legends &middot; 9 replies &middot; started 2 weeks ago</p>
             </article>
         </section>
     </main>
 
     <footer>
         <nav>
-            <a href="#">Community Guidelines</a>
-            <a href="#">Contact</a>
-            <a href="#">Help</a>
+            <a class="footer-link" href="#">Community Guidelines</a>
+            <a class="footer-link" href="#">Contact</a>
+            <a class="footer-link" href="#">Help</a>
         </nav>
-        <p>&copy; 2026 6kun. All rights reserved.</p>
+        <p>&copy; 2026 6kun. Nothing stays buried forever.</p>
     </footer>
 </body>
 </html>
