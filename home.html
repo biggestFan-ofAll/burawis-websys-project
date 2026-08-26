@@ -12,77 +12,86 @@
             <h1>6kun</h1>
             <p>Where the strange gets archived.</p>
         </div>
-        <form id="search" class="search-form" action="#" method="get">
-            <input class="search-input" type="search" name="q" placeholder="Search the archive...">
-            <button type="submit">Search</button>
-        </form>
-        <nav>
+        <nav class="site-nav">
             <a class="nav-link" href="home.html">Home</a>
             <a class="nav-link" href="category.html">Boards</a>
-            <a class="nav-link" href="#trending">Trending</a>
+            <a class="nav-link" href="home.html#trending">Trending</a>
         </nav>
-        <div class="user-controls">
-            <a class="nav-link profile-icon" href="profile.html">Profile</a>
-            <a class="nav-link" href="index.html">Logout</a>
+        <div class="header-actions">
+            <form id="search" class="search-form" action="#" method="get">
+                <input class="search-input" type="search" name="q" placeholder="Search the archive...">
+                <button type="submit">Search</button>
+            </form>
+            <div class="user-controls">
+                <a class="nav-link" href="profile.html">Profile</a>
+                <a class="nav-link" href="index.html">Logout</a>
+            </div>
         </div>
     </header>
 
-    <main class="site-main">
-        <section id="announcements">
-            <h2 class="section-title">From the Mods</h2>
-            <article class="post">
-                <h3>yeah, we're still here</h3>
-                <p>Rules got cleaned up a little. Don't be a dick, don't post people's personal info, and don't ruin a good story just because you don't like it. The usual stuff. Read the guidelines if you're new.</p>
-            </article>
-        </section>
+    <main class="site-main site-main--wide">
+        <div class="layout">
+            <div class="content">
+                <section id="announcements">
+                    <h2 class="section-title">From the Mods</h2>
+                    <article class="post">
+                        <h3>yeah, we're still here</h3>
+                        <p>Rules got cleaned up a little. Don't be a dick, don't post people's personal info, and don't ruin a good story just because you don't like it. The usual stuff. Read the guidelines if you're new.</p>
+                    </article>
+                </section>
 
-        <section id="actions">
-            <a href="create-thread.html" class="btn">Post Something Weird</a>
-        </section>
+                <section id="actions">
+                    <a href="create-thread.html" class="btn">Post Something Weird</a>
+                </section>
 
-        <section id="categories">
-            <h2 class="section-title">Boards</h2>
-            <article class="board-tag">
-                <h3 data-slug="paranormal">Paranormal</h3>
-                <p>Ghosts, sleep paralysis, weird houses, things standing in doorways, and that feeling you're not alone.</p>
-            </article>
-            <article class="board-tag">
-                <h3 data-slug="urban-legends">Urban Legends</h3>
-                <p>Local stories, internet folklore, childhood warnings, chain emails, and the thing your cousin swears actually happened.</p>
-            </article>
-            <article class="board-tag">
-                <h3 data-slug="unexplained">Unexplained</h3>
-                <p>Weird photos, missing time, strange recordings, impossible coincidences, and stuff that doesn't add up.</p>
-            </article>
-        </section>
+                <section id="trending" class="board-list">
+                    <h2 class="section-title">What's Everyone Talking About</h2>
+                    <article class="post">
+                        <h3>The knocking in apartment 4B</h3>
+                        <p class="meta">124 replies &middot; last activity 2 hours ago</p>
+                    </article>
+                    <article class="post">
+                        <h3>Anyone else remember the "other" ending?</h3>
+                        <p class="meta">87 replies &middot; last activity 5 hours ago</p>
+                    </article>
+                </section>
 
-        <section id="trending" class="board-list">
-            <h2 class="section-title">What's Everyone Talking About</h2>
-            <article class="post">
-                <h3>The knocking in apartment 4B</h3>
-                <p class="meta">124 replies &middot; last activity 2 hours ago</p>
-            </article>
-            <article class="post">
-                <h3>Anyone else remember the "other" ending?</h3>
-                <p class="meta">87 replies &middot; last activity 5 hours ago</p>
-            </article>
-        </section>
+                <section id="recent-threads" class="board-list">
+                    <h2 class="section-title">Fresh From the Archive</h2>
+                    <article class="post">
+                        <h3><a href="thread.html">Strange lights over the old mill</a></h3>
+                        <p class="meta">Posted in Unexplained &middot; OP says they're "probably just planes" but uploaded 14 pictures</p>
+                    </article>
+                    <article class="post">
+                        <h3><a href="thread.html">the story my grandmother never finished</a></h3>
+                        <p class="meta">Posted in Urban Legends &middot; "she'd always stop right before telling me what was in the basement"</p>
+                    </article>
+                    <article class="post">
+                        <h3><a href="thread.html">Something followed me home from the woods</a></h3>
+                        <p class="meta">Posted in Paranormal &middot; 3:17 AM &middot; OP has not replied since posting</p>
+                    </article>
+                </section>
+            </div>
 
-        <section id="recent-threads" class="board-list">
-            <h2 class="section-title">Fresh From the Archive</h2>
-            <article class="post">
-                <h3><a href="thread.html">Strange lights over the old mill</a></h3>
-                <p class="meta">Posted in Unexplained &middot; OP says they're "probably just planes" but uploaded 14 pictures</p>
-            </article>
-            <article class="post">
-                <h3><a href="thread.html">the story my grandmother never finished</a></h3>
-                <p class="meta">Posted in Urban Legends &middot; "she'd always stop right before telling me what was in the basement"</p>
-            </article>
-            <article class="post">
-                <h3><a href="thread.html">Something followed me home from the woods</a></h3>
-                <p class="meta">Posted in Paranormal &middot; 3:17 AM &middot; OP has not replied since posting</p>
-            </article>
-        </section>
+            <aside class="sidebar">
+                <div class="sidebar-block">
+                    <h3 class="section-title">Boards</h3>
+                    <nav class="board-nav">
+                        <a class="board-nav-link" data-slug="paranormal" href="#">Paranormal</a>
+                        <a class="board-nav-link" data-slug="urban-legends" href="#">Urban Legends</a>
+                        <a class="board-nav-link" data-slug="unexplained" href="category.html">Unexplained</a>
+                    </nav>
+                </div>
+                <div class="sidebar-block">
+                    <h3 class="section-title">Quick Links</h3>
+                    <nav class="board-nav">
+                        <a class="board-nav-link" href="home.html">Home</a>
+                        <a class="board-nav-link" href="create-thread.html">Post Something Weird</a>
+                        <a class="board-nav-link" href="#trending">Trending</a>
+                    </nav>
+                </div>
+            </aside>
+        </div>
     </main>
 
     <footer>

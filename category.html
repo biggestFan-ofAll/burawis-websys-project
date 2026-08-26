@@ -12,62 +12,87 @@
             <h1>6kun</h1>
             <p>Where the strange gets archived.</p>
         </div>
-        <form id="search" class="search-form" action="#" method="get">
-            <input class="search-input" type="search" name="q" placeholder="Search the archive...">
-            <button type="submit">Search</button>
-        </form>
-        <nav>
+        <nav class="site-nav">
             <a class="nav-link" href="home.html">Home</a>
             <a class="nav-link" href="category.html">Boards</a>
             <a class="nav-link" href="home.html#trending">Trending</a>
         </nav>
-        <div class="user-controls">
-            <a class="nav-link" href="profile.html">Profile</a>
-            <a class="nav-link" href="index.html">Logout</a>
+        <div class="header-actions">
+            <form id="search" class="search-form" action="#" method="get">
+                <input class="search-input" type="search" name="q" placeholder="Search the archive...">
+                <button type="submit">Search</button>
+            </form>
+            <div class="user-controls">
+                <a class="nav-link" href="profile.html">Profile</a>
+                <a class="nav-link" href="index.html">Logout</a>
+            </div>
         </div>
     </header>
 
-    <main class="site-main">
-        <section id="category-header">
-            <p><a href="home.html">&larr; Back to Home</a></p>
-            <h2 class="section-title">Unexplained</h2>
-            <p>Weird things, bad pictures, missing pieces, and stuff nobody in the comments can agree on.</p>
-            <a href="create-thread.html" class="btn">Post Something Weird</a>
-        </section>
+    <main class="site-main site-main--wide">
+        <div class="layout">
+            <div class="content">
+                <section id="category-header">
+                    <p><a href="home.html">&larr; Back to Home</a></p>
+                    <h2 class="section-title">Unexplained</h2>
+                    <p>Weird things, bad pictures, missing pieces, and stuff nobody in the comments can agree on.</p>
+                    <a href="create-thread.html" class="btn">Post Something Weird</a>
+                </section>
 
-        <section id="thread-list" class="board-list">
-            <h3>Recent Threads</h3>
+                <section id="thread-list" class="board-list">
+                    <h3>Recent Threads</h3>
 
-            <article class="post">
-                <h4><a href="thread.html">the lights at the old mill are back</a></h4>
-                <p class="meta">by nightwatcher_13 &middot; 4 replies &middot; last activity 18 hours ago</p>
-            </article>
+                    <article class="post">
+                        <h4><a href="thread.html">the lights at the old mill are back</a></h4>
+                        <p class="meta">by nightwatcher_13 &middot; 4 replies &middot; last activity 18 hours ago</p>
+                    </article>
 
-            <article class="post">
-                <h4><a href="thread.html">does anyone else hear this static at exactly 3:17?</a></h4>
-                <p class="meta">by salt_and_static &middot; 14 replies &middot; last activity 6 hours ago</p>
-            </article>
+                    <article class="post">
+                        <h4><a href="thread.html">does anyone else hear this static at exactly 3:17?</a></h4>
+                        <p class="meta">by salt_and_static &middot; 14 replies &middot; last activity 6 hours ago</p>
+                    </article>
 
-            <article class="post">
-                <h4><a href="thread.html">found this in my grandpa's attic. what the hell is it</a></h4>
-                <p class="meta">by hollow_ground &middot; 41 replies &middot; last activity 20 minutes ago</p>
-            </article>
+                    <article class="post">
+                        <h4><a href="thread.html">found this in my grandpa's attic. what the hell is it</a></h4>
+                        <p class="meta">by hollow_ground &middot; 41 replies &middot; last activity 20 minutes ago</p>
+                    </article>
 
-            <article class="post">
-                <h4><a href="thread.html">my camera keeps taking pictures while it's turned off</a></h4>
-                <p class="meta">by motelghost &middot; 8 replies &middot; last activity 2 hours ago</p>
-            </article>
+                    <article class="post">
+                        <h4><a href="thread.html">my camera keeps taking pictures while it's turned off</a></h4>
+                        <p class="meta">by motelghost &middot; 8 replies &middot; last activity 2 hours ago</p>
+                    </article>
 
-            <article class="post">
-                <h4><a href="thread.html">probably nothing but there's a second moon in these pics</a></h4>
-                <p class="meta">by jpeg_witch &middot; 23 replies &middot; last activity 3 hours ago</p>
-            </article>
+                    <article class="post">
+                        <h4><a href="thread.html">probably nothing but there's a second moon in these pics</a></h4>
+                        <p class="meta">by jpeg_witch &middot; 23 replies &middot; last activity 3 hours ago</p>
+                    </article>
 
-            <article class="post">
-                <h4><a href="thread.html">Anyone know why the old weather station is still transmitting?</a></h4>
-                <p class="meta">by deadchannel &middot; 67 replies &middot; last activity 11 minutes ago</p>
-            </article>
-        </section>
+                    <article class="post">
+                        <h4><a href="thread.html">Anyone know why the old weather station is still transmitting?</a></h4>
+                        <p class="meta">by deadchannel &middot; 67 replies &middot; last activity 11 minutes ago</p>
+                    </article>
+                </section>
+            </div>
+
+            <aside class="sidebar">
+                <div class="sidebar-block">
+                    <h3 class="section-title">Boards</h3>
+                    <nav class="board-nav">
+                        <a class="board-nav-link" data-slug="paranormal" href="#">Paranormal</a>
+                        <a class="board-nav-link" data-slug="urban-legends" href="#">Urban Legends</a>
+                        <a class="board-nav-link active" data-slug="unexplained" href="category.html">Unexplained</a>
+                    </nav>
+                </div>
+                <div class="sidebar-block">
+                    <h3 class="section-title">Quick Links</h3>
+                    <nav class="board-nav">
+                        <a class="board-nav-link" href="home.html">Home</a>
+                        <a class="board-nav-link" href="create-thread.html">Post Something Weird</a>
+                        <a class="board-nav-link" href="home.html#trending">Trending</a>
+                    </nav>
+                </div>
+            </aside>
+        </div>
     </main>
 
     <footer>
